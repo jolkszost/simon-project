@@ -1,0 +1,170 @@
+* {
+    border: 1px;
+    border-color: red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pB1 {
+    grid-area: pB1;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 50%;
+    border-width: 3px 1.5px 1.5px 3px;
+}
+
+#pB2 {
+    grid-area: pB2;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 50%;
+    border-width: 3px 3px 1.5px 1.5px;
+}
+
+#pB3 {
+    grid-area: pB3;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 50%;
+    border-width: 1.5px 1.5px 3px 3px;
+}
+
+#pB4 {
+    grid-area: pB4;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 50%;
+    border-width: 1.5px 3px 3px 1.5px;
+}
+
+#miscField {
+  width: 600px;
+  height: 200px;
+  border-radius: 0px 0px 5px 5px;
+  background-image: linear-gradient(#400154d6, #0e0120db, #400154d6);
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 100px);
+  grid-template-areas: 
+  "startButton startButton" 
+  "counter highscore";
+  align-items: center;
+  justify-items: center;
+  
+}
+
+#gameBoard {
+    height: 600px;
+    width: 600px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(36, 0, 36);
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+    "pB1 pB2"
+    "pB3 pB4";
+}
+
+.playButton {
+    border-color: black;
+    border-style: solid;
+    transition: all .07s ease;
+    background-image: radial-gradient(circle);
+}
+
+#startButton {
+    grid-area: startButton;
+    width: 150px;
+    height: 75px;
+    background-color: #ff962f;
+    border: solid #ad8cad;
+    border-radius: 45%;
+    font-size: 35px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#gameIndicator {
+    grid-area: gameIndicator;
+}
+
+#cIndicator {
+    background-color: rgba(255, 255, 255, 0.945);
+    color: black;
+    text-align: center;
+}
+
+#cSpan {
+    font-size: large;
+    background-color: peachpuff;
+   
+}
+
+#counter {
+    grid-area: counter;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+#highScore {
+    grid-area: highscore;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#hSpan {
+    font-size: large;
+}
+
+#hIndicator {
+    background-color: rgba(255, 255, 255, 0.945);
+    color: black;
+    text-align: center;
+}
+
+.pB1off {
+    
+    background-image: radial-gradient(circle, rgb(61 153 18), darkgreen)}
+
+.pB2off {
+    background-image: radial-gradient(circle, red, darkred);
+}
+
+.pB3off {
+    background-image: radial-gradient(circle, yellow, rgb(112 112 0));
+}
+
+.pB4off {
+  background-image: radial-gradient(circle, blue,  #000028);
+     
+}
+
+.pB1on {
+    background-image: radial-gradient(circle, rgb(61 153 18), lime)
+
+}
+
+.pB2on {
+    background-color: red
+}
+
+.pB3on {
+    background-color: rgb(255, 255, 49);
+}
+
+.pB4on {
+    background-image: radial-gradient(circle, blue, #0000d5c7);
+}

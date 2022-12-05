@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="gameBoard">
+    
+    <div id="pB1" class="playButton pB1off" onclick="pushG()"></div>
+    <div id="pB2" class="playButton pB2off" onclick="pushR()"></div>
+    <div id="pB3" class="playButton pB3off" onclick="pushY()"></div>
+    <div id="pB4" class="playButton pB4off" onclick="pushB()"></div>
+    
+    
+  </div>  
+  <div id="miscField">
+        <button id="startButton" onClick="startGame()">PLAY</button>
+        <div id="counter">
+          <span id="cSpan">Current Score</span>
+          <div id="cIndicator">69</div>
+        </div>
+        <div id="highScore">
+          <span id="hSpan">High Score</span>
+          <div id="hIndicator">420</div>
+        </div>
+     </div>        
+</body>
+</html>
