@@ -1,13 +1,9 @@
-* {
-    border: 1px;
-    border-color: red;
-}
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #a14eb1;
 }
 
 #pB1 {
@@ -70,7 +66,6 @@ body {
 .playButton {
     border-color: black;
     border-style: solid;
-    transition: all .07s ease;
     background-image: radial-gradient(circle);
 }
 
@@ -78,10 +73,10 @@ body {
     grid-area: startButton;
     width: 150px;
     height: 75px;
-    background-color: #ff962f;
-    border: solid #ad8cad;
+    background-color: #ca7ed9;
+    border: solid black;
     border-radius: 45%;
-    font-size: 35px;
+    font-size: 25px;
     
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -91,15 +86,26 @@ body {
 }
 
 #cIndicator {
-    background-color: rgba(255, 255, 255, 0.945);
+    background-color: #ae62bd;
     color: black;
     text-align: center;
+    font-size: xx-large;
+    margin-right: 2.1em;
+    width: 40px;
+    border-radius: 30%;
+    border: solid black;
 }
 
 #cSpan {
-    font-size: large;
-    background-color: peachpuff;
-   
+
+    background-color: #ae62bd;
+    margin-right: 3em;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 12px;
+    border: solid black;
 }
 
 #counter {
@@ -126,13 +132,25 @@ body {
 }
 
 #hSpan {
-    font-size: large;
+    background-color: #ae62bd;
+    margin-left: 2em;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 12px;
+    border: solid black;
 }
 
 #hIndicator {
-    background-color: rgba(255, 255, 255, 0.945);
+    background-color: #ae62bd;
     color: black;
     text-align: center;
+    font-size: xx-large;
+    margin-left: 1.65em;
+    width: 40px;
+    border-radius: 30%;
+    border: solid black;
 }
 
 .pB1off {

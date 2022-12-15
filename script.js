@@ -10,6 +10,9 @@ let blueB = document.querySelector('#pB4');
 let counter = document.getElementById('cIndicator');
 let highScore = document.getElementById('hIndicator');
 
+counter.textContent = '0';
+highScore.textContent = '0';
+
 function pushG() {
     playerArr.push(0)
     greenB.classList.remove('pB1off')
@@ -133,7 +136,7 @@ function startGame() {
         playerArr.pop();
     }
     startButton.textContent = 'Play'
-}
+} counter.textContent = 0;
 };
 
 
@@ -148,6 +151,7 @@ function continueGame() {
         setTimeout(()=>
             lightColor(seqArr[i]), i*800 + 500);
     }
+    counter.textContent = seqArr.length - 1;
     console.log(playerArr, seqArr)
     return
     }
@@ -230,9 +234,14 @@ const resultNextRound = function(a, b) {
             while (seqArr.length > 0) {
                 seqArr.pop();
                 playerArr.pop();
-                startButton.textContent = 'Lose, restart!'
+                startButton.textContent = 'Lose, restart!';
+
+                if (Number(counter.textContent) > Number(highScore.textContent)) {
+                    highScore.textContent = counter.textContent;
+                }
               //  console.log(seqArr, playerArr)
                 return
         }
     }
 }
+
